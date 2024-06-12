@@ -3,9 +3,17 @@
 {% block title %}Result{% endblock %}
 
 {% block content %}
-<div class="mt-5">
-    <h1 class="text-2xl">Sentiment Analysis Result</h1>
-    <p class="mt-3">The sentiment of the review is: <strong>{{ sentiment }}</strong></p>
-    <a href="{{ url_for('main.index') }}" class="mt-2 p-2 bg-blue-500 text-white rounded">Back</a>
+<div class="items-center text-center container w-screen h-screen px-4 py-8 bg-gradient-to-r from-blue-500 to-blue-700">
+    <h1 class="text-4xl font-bold text-white text-center">Sentiment Analysis Result</h1>
+
+    <p class="mt-8 text-2xl text-white text-center">The sentiment of the review is : <strong>{{ sentiment }}</strong></p>
+    <br/>
+    <text class="font-bold text-white text-center"><a href="{{ url_for('main.index') }}">BACK</a></text>
+
+    <footer class="text-center items-end text-white py-4 mt-8">
+        Copyright &copy; 2024 D3BIT - Team 8
+        <br/>
+        Andru - 48 | Khanza - 49 | Aaron - 60
+    </footer>
 </div>
 {% endblock %}
