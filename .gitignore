@@ -2,4 +2,3 @@ node_modules
 .venv
 app/__pycache__
 IMDB Dataset.csv
-playground.ipynb
