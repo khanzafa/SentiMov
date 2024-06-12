@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="mt-5">
+<div class="mt-5 bg-yellow-500">
     <h1 class="text-2xl">Sentiment Analysis</h1>
     <form action="{{ url_for('main.predict') }}" method="POST" class="mt-3">
         <textarea title="review" name="review" rows="4" class="w-full p-2 border rounded"></textarea>
