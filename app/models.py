@@ -6,6 +6,9 @@ import pickle
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 # Load the pre-trained model and vectorizer (assumed to be trained and saved previously)
 with open('model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)

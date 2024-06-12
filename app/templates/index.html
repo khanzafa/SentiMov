@@ -3,8 +3,8 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="mt-5">
-    <h1 class="text-2xl">Sentiment Analysis</h1>
+<div class="mt-5 bg-yellow-300">
+    <h1 class="text-2xl text-center text-bold">Sentiment Analysis</h1>
     <form action="{{ url_for('main.predict') }}" method="POST" class="mt-3">
         <textarea title="review" name="review" rows="4" class="w-full p-2 border rounded"></textarea>
         <button type="submit" class="mt-2 p-2 bg-blue-500 text-white rounded">Predict</button>
